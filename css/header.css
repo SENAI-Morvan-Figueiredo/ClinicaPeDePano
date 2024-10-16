@@ -1,0 +1,66 @@
+header{
+    width: 100%;
+    padding: 20px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #D4ECE9;
+    ;
+    transition: .5s;
+}
+
+header.rolagem{
+    background-color: #fff;
+    padding: 20px 4%;
+}
+
+header.rolagem a, header.rolagem i{
+    color: #2C4845;
+}
+
+header i{
+    font-size: 40px;
+    color: #fff;
+}
+
+header ul{
+    list-style-type: none;
+}
+header ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a{
+    color:#2C4845;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: bold;
+    transition: 2s;
+}
+header ul li a:hover{
+    color: #12C7B9;
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: bold;
+}
+.logo{
+
+}
+
+.btn-login button{
+    width: 120px;
+    height: 40px;
+    border: 0;
+    background-color: #2C4845 ;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+    border-radius: 10px;
+}
+
+.btn-login button:hover{
+    background-color:#299E93 ;
+    transition: 2s;
+}
