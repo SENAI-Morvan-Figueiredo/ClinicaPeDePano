@@ -1,0 +1,31 @@
+.main{
+    width: 100%;
+    background-image: linear-gradient(#D4ECE9, #299E93 );
+}
+.banner{
+    height: 70vh;
+    width: 100%;
+}
+.conteudo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    padding-top: 10px;
+    margin: auto;
+
+
+}
+.sobre{
+    margin-top: 50px;
+    width:50% ;
+}
+.sobre h2{
+    color: #12C7B9 ; 
+    margin-bottom: 3%;
+}
+.img-s{
+    margin-top: 50px;
+    padding: 2%;
+    width: 40%;
+}
