@@ -27,7 +27,7 @@ main h3{
     flex-direction: row;
     text-align: justify;
     width: 100%;
-    height: auto;
+    height: fit-content;
     margin-top: 10px;
 }
 
@@ -48,7 +48,11 @@ main h3{
 }
 
 .info-equipe{
-    height: 100%;
+    height: auto;
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     border: 1px solid  #12C7B9;
     padding: 20px;
 }
