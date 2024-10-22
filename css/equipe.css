@@ -1,0 +1,105 @@
+/* container principal */
+.container-principal{
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+}
+main h1{
+    color: #32756C;
+}
+
+main h3{
+    background: linear-gradient(to right, #299E93, #88C9C3, #D4ECE9 70%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+}
+
+/* sobre a equipe */
+.sobre-equipe{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sobre-equipe article{
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.sobre-equipe article div{
+    height: auto;
+    width: 300px;
+    border: 1px solid gray;
+    background: #dce0df7a;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-equipe article div img{
+    height: 200px;
+    width: 200px;
+}
+
+.info-equipe{
+    height: 100%;
+    border: 1px solid  #12C7B9;
+    padding: 20px;
+}
+
+/* profissionais */
+.profissionais{
+    width: 100%;
+    margin: 80px auto 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.profissionais h1{
+    margin-bottom: 10px;
+}
+.profissionais div{
+    display: flex;
+    flex-direction: column;
+}
+
+.profissionais article{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    height: auto;
+}
+
+.profissionais article p{
+    text-align: justify;
+}
+
+.info-profissional{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border: 1px solid #12C7B9;
+    border-radius: 5px;
+    padding: 10px;
+    height: fit-content;
+}
+
+
+
+.profissionais article img{
+    width: 202px;
+    height: 229px;
+    border-radius: 25px;
+    border: 5px solid #299E93;
+}
+
