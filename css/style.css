@@ -1,6 +1,7 @@
 @import url("carrossel.css");
 @import url("footer.css");
 @import url("header.css");
+@import url("banner.css");
 
 *{
     margin: 0;
@@ -13,16 +14,6 @@ html{
     background-repeat: no-repeat;
     background-size: contain;
 }
-
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* font-family: var(); adicionar a fonte  */
-    margin: 0;
-    min-height: 100vh;
-}
-
 .container{
     max-width: 1280px;
     margin: auto;
@@ -34,3 +25,19 @@ body{
     justify-content: space-between;
 }
 
+.localizacao{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.localizacao h1{
+    justify-self: center;
+    padding: 5px;
+}
+.localizacao h3{
+   justify-self: center;
+   padding: 5px;
+}
+.img-l{
+    justify-self: center;
+    padding: 10px;
+}
