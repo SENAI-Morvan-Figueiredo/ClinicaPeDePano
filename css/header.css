@@ -4,10 +4,22 @@
     /* --default: #fff; */
 }
 
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.flex nav{
+    width: fit-content;
+}
+
 header{
     width: 100%;
     padding: 20px 4%;
-
     background: linear-gradient(to right, rgba(255, 255, 255) 0% , #b2ece5 80%);
 
 }
@@ -28,6 +40,10 @@ header li{
 
 header ul{
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: fit-content;
 }
 header ul li{
     display: inline-block;

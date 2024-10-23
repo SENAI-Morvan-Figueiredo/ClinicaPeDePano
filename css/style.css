@@ -22,20 +22,14 @@ body{
     min-height: 100vh;
 }
 
-.home{
+.pg-atual{
     color: #12C7B9;
     transition: .5s;
 }
 
-.home:hover{
+.pg-atual:hover{
     color: black;
     text-decoration: underline;
 }
 
-.flex{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
-}
 
