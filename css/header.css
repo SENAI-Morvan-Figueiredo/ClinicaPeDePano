@@ -1,13 +1,20 @@
+:root {
+    --background: #2C2C2C;
+    --primary: #299E93;
+    /* --default: #fff; */
+}
+
 header{
     width: 100%;
     padding: 20px 4%;
-    background-color: #D4ECE9;
-    transition: .5s;
+
+    background: linear-gradient(to right, rgba(255, 255, 255) 0% , #b2ece5 80%);
+
 }
 
 header.rolagem{
     background-color: #fff;
-    padding: 20px 4%;
+    padding: 20px;
 }
 
 header.rolagem a, header.rolagem li{
@@ -25,21 +32,21 @@ header ul{
 header ul li{
     display: inline-block;
     margin: 0 40px;
+    margin-inline: 80px;
 }
 
 header ul li a{
-    color:#2C4845;
+    color:#000000;
     text-decoration: none;
-    font-family: monospace;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 30px;
-    font-weight: bold;
-    transition: 2s;
+    transition: .5s;
 }
 header ul li a:hover{
     color: #12C7B9;
-    font-family: monospace;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 30px;
-    font-weight: bold;
+    text-decoration: underline;
 }
 .logo{
 
@@ -49,14 +56,59 @@ header ul li a:hover{
     width: 120px;
     height: 40px;
     border: 0;
-    background-color: #2C4845 ;
+    background-color: #299E93;
     color: #fff;
     cursor: pointer;
-    transition: .2s;
     border-radius: 10px;
 }
 
-.btn-login button:hover{
-    background-color:#299E93 ;
-    transition: 2s;
+.button {
+    color: var(--default);
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 2.5rem;
+    max-width: 160px;
+    width: 100%;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    transition: all 1s ease-in;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px black;
 }
+
+.button:hover {
+    color: black;
+}
+
+.button svg {
+    height: 40px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.button rect {
+    fill: none;
+    stroke: var(--default);
+    stroke-width: 2;
+    stroke-dasharray: 450, 0;
+    transition: all 0.5s linear;
+    color: #299E93;
+}
+
+.button:hover rect {
+    stroke-width: 5;
+    stroke-dasharray: 120, 200;
+    stroke-dashoffset: 48;
+    stroke: var(--primary);
+    transition: all 2s cubic-bezier(0.22, 1, 0.25, 1);
+}
+
+
