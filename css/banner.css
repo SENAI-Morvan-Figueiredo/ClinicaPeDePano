@@ -1,12 +1,14 @@
-.main{
+.main {
     width: 100%;
-    background-image: linear-gradient(#D4ECE9, #299E93 );
+    background-image: linear-gradient(#D4ECE9, #299E93);
 }
-.banner{
+
+.banner {
     height: 70vh;
     width: 100%;
 }
-.conteudo{
+
+.conteudo {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -16,16 +18,41 @@
 
 
 }
-.sobre{
+
+.sobre {
     margin-top: 50px;
-    width:50% ;
+    width: 50%;
 }
-.sobre h2{
-    color: #12C7B9 ; 
+
+.sobre h2 {
+    color: #12C7B9;
     margin-bottom: 3%;
 }
-.img-s{
+
+.img-s {
     margin-top: 50px;
     padding: 2%;
     width: 40%;
+}
+
+.localizacao {
+    display: flex;
+    flex-direction: column;
+}
+
+.localizacao h1 {
+    padding: 10px;
+    align-self: center;
+}
+
+.localizacao h3 {
+    padding: 20px;
+    align-self: center;
+}
+
+.localizacao img-l {
+    /* a img n ta ficando no centro amnh resolvo */
+    align-self: center;
+    padding: 20px;
+    
 }
