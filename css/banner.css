@@ -50,9 +50,7 @@
     align-self: center;
 }
 
-.localizacao img-l {
-    /* a img n ta ficando no centro amnh resolvo */
+.img-l {
     align-self: center;
     padding: 20px;
-    
 }
