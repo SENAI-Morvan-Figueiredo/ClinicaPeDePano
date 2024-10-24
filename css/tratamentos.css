@@ -18,24 +18,17 @@ main h1{
     justify-content: space-evenly;
 }
 
-/* Alinhamento dos nomes dos tratamentos */
-.tratamento{
-    text-align: center; 
-}
-
 .tratamentos h1{
     font-size: 24px;
     margin-bottom: 20px;
 }
 
-.tratamentos div{
-    display: flex;
-    flex-direction: row;
+/* Alinhamento dos cards de tratamentos */
+.tratamento{
+    text-align: center; 
 }
 
-.tratamentos article p{
-    text-align: justify;
-}
+/* Imagens dos tratamentos */
 
 .tratamentos article img{
     width: 350px;
@@ -53,6 +46,7 @@ main h1{
     position: relative;    
 }
 
+/* Textos dos tratamentos */
 .img-tratamentos p{
     width: 350px;
     height: 350px;
@@ -60,10 +54,9 @@ main h1{
     position: absolute;
     align-items: center;
     text-align: justify;
-    transform: scaleX(-1);
+    /* Espelhamento da Fonte */
+    transform: scaleX(-1); 
     padding: 15px;
-    z-index: 0;
-    top: 0;
-    left: 0;
+    z-index: 2;
 }
 
