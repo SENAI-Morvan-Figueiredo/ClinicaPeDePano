@@ -1,0 +1,31 @@
+.botao{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+
+}
+
+.botao-l{
+    margin-top: 2%;
+    padding: 10px;
+    width: 200px;
+    height: 40px;
+    border: 0;
+    background-color: #299E93;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+.botao-c{
+    margin-top: 2%;
+    padding: 10px;
+    width: 200px;
+    height: 40px;
+    border: 0;
+    background-color: #299E93;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+
+}

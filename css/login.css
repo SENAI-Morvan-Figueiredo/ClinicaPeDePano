@@ -1,7 +1,7 @@
 @import url("footer.css");
 @import url("header.css");
 @import url("banner.css");
-
+@import url("botoes.css");
 * {
     margin: 0;
     padding: 0;
