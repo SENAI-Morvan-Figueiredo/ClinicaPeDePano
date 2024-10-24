@@ -2,40 +2,39 @@
 @import url("header.css");
 @import url("banner.css");
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-html{
+html {
 
-    background: linear-gradient(to bottom, rgb(223, 231, 225) 0% , #b2ece5 80%);
+    background: linear-gradient(to bottom, rgb(223, 231, 225) 0%, #b2ece5 80%);
     background-repeat: no-repeat;
     background-size: contain;
 }
 
-body{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0;
     min-height: 100vh;
 }
 
-.home{
+.home {
     color: #12C7B9;
     transition: .5s;
 }
 
-.home:hover{
+.home:hover {
     color: black;
     text-decoration: underline;
 }
 
-.flex{
+.flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100%;
 }
-
