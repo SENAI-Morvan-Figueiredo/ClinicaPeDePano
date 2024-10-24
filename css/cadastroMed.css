@@ -3,6 +3,41 @@
     margin-top: 20px;
 }
 
+.btn-login summary{
+    list-style: none;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+}
+.btn-login details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.btn-login div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    right:0;
+    width: fit-content;
+    padding: 10px;
+    background: #d4ece9;
+}
+
+.btn-login a{
+    width: fit-content;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+}
+
+.btn-login img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
 .formulario{
     width: 60%;
     height: fit-content;
