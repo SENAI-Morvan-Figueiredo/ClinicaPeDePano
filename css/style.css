@@ -1,6 +1,7 @@
 @import url("footer.css");
 @import url("header.css");
 @import url("banner.css");
+@import url("agendar.css");
 
 * {
     margin: 0;
