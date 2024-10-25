@@ -1,0 +1,59 @@
+.container-principal{
+    width: 80%;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.container-principal article{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid #299E93;
+    padding: 20px;
+}
+
+.filtros{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.filtros div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filtros input{
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    width: 290px;
+    height: 35px;
+    padding-left: 10px;
+}
+
+.btns-filtro{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.btns-filtro button{
+    background-color: #12C7B9;
+    color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
