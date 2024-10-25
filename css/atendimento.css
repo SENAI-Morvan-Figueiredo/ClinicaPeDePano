@@ -38,7 +38,7 @@
     padding-left: 10px;
 }
 
-.btns-filtro{
+.btns{
     display: flex;
     flex-direction: row;
     gap: 30px;
@@ -47,7 +47,7 @@
     width: 100%;
 }
 
-.btns-filtro button{
+.btns button{
     background-color: #12C7B9;
     color: white;
     width: 100px;
@@ -56,4 +56,28 @@
     cursor: pointer;
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cards-consultas{
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.card .div-extra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
