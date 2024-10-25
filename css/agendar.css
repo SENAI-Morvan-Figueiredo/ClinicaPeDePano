@@ -27,7 +27,7 @@
 .detalheT{
     color: #2C4845;
 }
-form .button {
+form .botao-a {
     height: 35px;
     margin-top: 5%;
     margin-left: 25%;
@@ -35,7 +35,7 @@ form .button {
 
   }
   
-  form .button input {
+  form .botao-a input {
     height: 100%;
     width: 100%;
     color: #fff;
@@ -44,6 +44,6 @@ form .button {
     background: #12C7B9 ;
   }
   
-  form .button input:hover {
+  form .botao-a input:hover {
     background: #2C4845 ;
   }
