@@ -12,42 +12,57 @@ form{
 .card{
     align-self: center;
     width: 400px;
-    height: 400px;
+    height: fit-content;
     border-radius: 20px;
     margin-top: 50px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
 }
 .card h2{
-    margin-top: 5%;
-    margin-left: 25%;
-    margin-right: 25%;
+    width: fit-content;
+    height: fit-content;
     color: #2C4845;
-    align-self: center;
 }
+
 .box{
-    margin-top: 5%;     
-    margin-left: 25%;
-    margin-right: 25%;
-    align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
 }
+
+.box span{
+  font-size: 1.2rem;
+}
+
+.box input{
+  height: 2rem;
+  padding-left: 10px;
+}
+
 .detalheT{
     color: #2C4845;
 }
-form .botao-a {
-    height: 35px;
-    margin-top: 5%;
-    margin-left: 25%;
-    margin-right: 25%;
 
+form .botao-a {
+    height: fit-content;
+    width: fit-content;
   }
   
   form .botao-a input {
-    height: 100%;
-    width: 100%;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
     color: #fff;
-    font-size: 16px;
+    font-size: 1rem;
     transition: all 0.3s ease;
-    background: #12C7B9 ;
+    background: #12C7B9;
   }
   
   form .botao-a input:hover {

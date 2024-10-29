@@ -31,8 +31,8 @@ main h1{
 /* Imagens dos tratamentos */
 
 .tratamentos article img{
-    width: 350px;
-    height: 350px;
+    width: 100%;
+    height: 100%;
     border-radius: 25px;
     border: 5px solid #299E93;
     position: absolute;
@@ -43,20 +43,39 @@ main h1{
     width: 350px;
     height: 350px;
     display: flex;
-    position: relative;    
+    position: relative;   
+}
+.img-tratamentos:hover{
+    animation: flip 0.5s linear forwards;
 }
 
+.img-tratamentos:hover p{
+    backdrop-filter: blur(16px) brightness(0.6);
+    color: white;
+    transition: all 1s ease;
+    z-index: 1;
+}
 /* Textos dos tratamentos */
 .img-tratamentos p{
-    width: 350px;
-    height: 350px;
+    width: 100%;
+    height: 100%;
     display: flex;
     position: absolute;
     align-items: center;
     text-align: justify;
+    
+    border-radius: 25px;
     /* Espelhamento da Fonte */
     transform: scaleX(-1); 
     padding: 15px;
-    z-index: 2;
+    z-index: 0;
 }
 
+@keyframes flip {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(180deg);
+    }
+}
