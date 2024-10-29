@@ -1,0 +1,62 @@
+/* container principal */
+.container-principal{
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+}
+main h1{
+    color: #32756C;
+}
+
+/* Tratamentos */
+.tratamentos{
+    width: 100%;
+    margin: 50px auto 0px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.tratamentos h1{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Alinhamento dos cards de tratamentos */
+.tratamento{
+    text-align: center; 
+}
+
+/* Imagens dos tratamentos */
+
+.tratamentos article img{
+    width: 350px;
+    height: 350px;
+    border-radius: 25px;
+    border: 5px solid #299E93;
+    position: absolute;
+    z-index: 1;
+}
+
+.img-tratamentos{
+    width: 350px;
+    height: 350px;
+    display: flex;
+    position: relative;    
+}
+
+/* Textos dos tratamentos */
+.img-tratamentos p{
+    width: 350px;
+    height: 350px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    text-align: justify;
+    /* Espelhamento da Fonte */
+    transform: scaleX(-1); 
+    padding: 15px;
+    z-index: 2;
+}
+

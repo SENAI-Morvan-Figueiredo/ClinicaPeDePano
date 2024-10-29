@@ -1,126 +1,80 @@
-@import url("carrossel.css");
+@import url("footer.css");
+@import url("header.css");
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-html{
-    height: 150vh;
-    background-color: #ffffff;
+html {
+    background: linear-gradient(to bottom, rgb(223, 231, 225) 0%, #b2ece5 80%);
     background-repeat: no-repeat;
     background-size: contain;
 }
 
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* font-family: var(); adicionar a fonte  */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0;
     min-height: 100vh;
 }
 
-.container{
-    max-width: 1280px;
-    margin: auto;
-}
 
-.flex{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+.pg-atual{
 
-header{
-    width: 100%;
-    padding: 20px 4%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #D4ECE9;
-    ;
+    color: #12C7B9;
     transition: .5s;
 }
 
-header.rolagem{
-    background-color: #fff;
-    padding: 20px 4%;
+
+.pg-atual:hover{
+
+    color: black;
+    text-decoration: underline;
 }
 
-header.rolagem a, header.rolagem i{
-    color: #2C4845;
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
 }
 
-header i{
-    font-size: 40px;
-    color: #fff;
-}
-
-header ul{
-    list-style-type: none;
-}
-header ul li{
-    display: inline-block;
-    margin: 0 40px;
-}
-
-header ul li a{
-    color:#2C4845;
-    text-decoration: none;
-    font-family: monospace;
-    font-size: 30px;
-    font-weight: bold;
-    transition: 2s;
-}
-header ul li a:hover{
-    color: #12C7B9;
-    font-family: monospace;
-    font-size: 30px;
-    font-weight: bold;
-}
-.logo{
-
-}
-
-.btn-login button{
-    width: 120px;
-    height: 40px;
-    border: 0;
-    background-color: #2C4845 ;
-    color: #fff;
+.btn-logado summary{
+    list-style: none;
     cursor: pointer;
-    transition: .2s;
-    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
 }
-
-.btn-login button:hover{
-    background-color:#299E93 ;
-    transition: 2s;
-}
-
-.footer {
-    background-color:#D4ECE9;
-    
-    width: 100%;
-    height: 50px;
-
-    color: rgb(0, 0, 0);
-
+.btn-logado details{
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    bottom: 0;
-    left: 0;
-   
+}
+.btn-logado div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    right:0;
+    width: fit-content;
+    padding: 10px;
+    background: #d4ece9;
+    z-index: 3;
 }
 
-.menu_footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 15px;
+.btn-logado a{
+    width: fit-content;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+}
+
+.btn-logado img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
 }

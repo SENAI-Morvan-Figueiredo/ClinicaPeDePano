@@ -1,0 +1,40 @@
+@import url("footer.css");
+@import url("header.css");
+@import url("banner.css");
+@import url("botoes.css");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+html {
+    background-image: url('../imagens/TelaLoginBack.PNG');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.home {
+    color: #12C7B9;
+    transition: .5s;
+}
+
+.home:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}

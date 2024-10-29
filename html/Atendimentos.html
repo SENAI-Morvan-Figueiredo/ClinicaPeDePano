@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <title>Fisioterapia pé de pano</title>
+     <link rel="stylesheet" href="../css/style.css">
+     <link rel="stylesheet" href="../css/atendimento.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+
+            <div class="flex">
+                <div class="logo">
+                    
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="tratamentos.html">Tratamentos</a></li>
+                        <li><a href="equipe.html">Equipe</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                    </ul>
+                </nav>
+
+                <!-- alterar para botão logado -->
+                <div class="btn-logado">
+                    <details>
+                        <summary><img src="../imagens/logado.PNG" alt=""></summary>
+                        <div>
+                            <span><a href="#">Consultas</a></span>
+                            <span><a href="#">Consultas adm</a></span>
+                            <span><a href="agendarC.html">Novo Agendamento</a></span>
+                            <span><a href="cadastroMed.html">Cadastrar Profissional</a></span>
+                            <span><a href="#">Alterar Dados</a></span>
+                            <span><a href="../index.html">Sair</a></span>
+                        </div>
+
+                    </details>
+                    
+                    <!-- <a href="cadastroUser.html" class="button">
+                        <svg>
+                            <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                        </svg>
+                        LOGIN
+                    </a> -->
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main class="container-principal">
+        <h1>Consultar Atendimentos</h1>
+        <article>
+            <h2>Filtrar</h2>
+            <span class="filtros">
+                <div class="input-filtro">
+                    <label for="tratamentos">Tratamentos</label>
+                    <input name="tratamentos" list="tratamentos" placeholder="tipo de tratamento">
+                    <datalist id="tratamentos">
+                        <option value="Acupuntura">
+                        <option value="Fisioterapia">
+                        <option value="Pilates">
+                    </datalist>
+                </div>
+                <div class="input-filtro">
+                    <label for="nome">Nome do Profissional</label>
+                    <input name="nome-profissional" list="nome-profissional" placeholder="nome do profissional selecionado">
+                    <datalist id="nome-profissional">
+                        <option value="Elmer Hartman">
+                        <option value="Emmett Brown">
+                        <option value="Hannibal Lecter">
+                        <option value="Hans Chucrute">
+                        <option value="Mundo">
+                        <option value="Patrick Estrela">
+                    </datalist>
+                </div>
+                <div class="input-filtro">
+                    <label for="data">Data de Agendamento</label>
+                    <input type="date" name="data">
+                </div>
+                
+            </span>
+            <span class="btns">
+                <button>Limpar</button>
+                <button>Pesquisar</button>
+            </span>
+            <span class="cards-consultas">
+                <div class="card">
+                    <div class="div-extra">
+                        <h2>Fisioterapia</h2>
+                        <div class="infos-consulta">
+                            <p>Nome do Profissional</p>
+                            <h5>Dr. Hannibal Lecter</h5>
+                            <br>
+                            <p>Data: 77/77/7777</p>
+                            <p>Hora: 10:99</p>
+                            <br>
+                            <p>Local: R. Vudu é Prajacu, 666 - Puxa Penas, Rachadores</p>
+                            <div class="imagem-logo"></div>
+                        </div>
+                        <div class="btn-card">
+                            <button>Cancelar Consulta</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="div-extra">
+                        <h2>Fisioterapia</h2>
+                        <div class="infos-consulta">
+                            <p>Nome do Profissional</p>
+                            <h5>Dr. Hannibal Lecter</h5>
+                            <br>
+                            <p>Data: 77/77/7777</p>
+                            <p>Hora: 10:99</p>
+                            <br>
+                            <p>Local: R. Vudu é Prajacu, 666 - Puxa Penas, Rachadores</p>
+                            <div class="imagem-logo"></div>
+                        </div>
+                        <div class="btn-card">
+                            <button>Cancelar Consulta</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="div-extra">
+                        <h2>Fisioterapia</h2>
+                        <div class="infos-consulta">
+                            <p>Nome do Profissional</p>
+                            <h5>Dr. Hannibal Lecter</h5>
+                            <br>
+                            <p>Data: 77/77/7777</p>
+                            <p>Hora: 10:99</p>
+                            <br>
+                            <p>Local: R. Vudu é Prajacu, 666 - Puxa Penas, Rachadores</p>
+                            <div class="imagem-logo"></div>
+                        </div>
+                        <div class="btn-card">
+                            <button>Cancelar Consulta</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="div-extra">
+                        <h2>Fisioterapia</h2>
+                        <div class="infos-consulta">
+                            <p>Nome do Profissional</p>
+                            <h5>Dr. Hannibal Lecter</h5>
+                            <br>
+                            <p>Data: 77/77/7777</p>
+                            <p>Hora: 10:99</p>
+                            <br>
+                            <p>Local: R. Vudu é Prajacu, 666 - Puxa Penas, Rachadores</p>
+                            <div class="imagem-logo"></div>
+                        </div>
+                        <div class="btn-card">
+                            <button>Cancelar Consulta</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="div-extra">
+                        <h2>Fisioterapia</h2>
+                        <div class="infos-consulta">
+                            <p>Nome do Profissional</p>
+                            <h5>Dr. Hannibal Lecter</h5>
+                            <br>
+                            <p>Data: 77/77/7777</p>
+                            <p>Hora: 10:99</p>
+                            <br>
+                            <p>Local: R. Vudu é Prajacu, 666 - Puxa Penas, Rachadores</p>
+                            <div class="imagem-logo"></div>
+                        </div>
+                        <div class="btn-card">
+                            <button>Cancelar Consulta</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="div-extra">
+                        <h2>Fisioterapia</h2>
+                        <div class="infos-consulta">
+                            <p>Nome do Profissional</p>
+                            <h5>Dr. Hannibal Lecter</h5>
+                            <br>
+                            <p>Data: 77/77/7777</p>
+                            <p>Hora: 10:99</p>
+                            <br>
+                            <p>Local: R. Vudu é Prajacu, 666 - Puxa Penas, Rachadores</p>
+                            <div class="imagem-logo"></div>
+                        </div>
+                        <div class="btn-card">
+                            <button>Cancelar Consulta</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="div-extra">
+                        <h2>Fisioterapia</h2>
+                        <div class="infos-consulta">
+                            <p>Nome do Profissional</p>
+                            <h5>Dr. Hannibal Lecter</h5>
+                            <br>
+                            <p>Data: 77/77/7777</p>
+                            <p>Hora: 10:99</p>
+                            <br>
+                            <p>Local: R. Vudu é Prajacu, 666 - Puxa Penas, Rachadores</p>
+                            <div class="imagem-logo"></div>
+                        </div>
+                        <div class="btn-card">
+                            <button>Cancelar Consulta</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="div-extra">
+                        <h2>Fisioterapia</h2>
+                        <div class="infos-consulta">
+                            <p>Nome do Profissional</p>
+                            <h5>Dr. Hannibal Lecter</h5>
+                            <br>
+                            <p>Data: 77/77/7777</p>
+                            <p>Hora: 10:99</p>
+                            <br>
+                            <p>Local: R. Vudu é Prajacu, 666 - Puxa Penas, Rachadores</p>
+                            <div class="imagem-logo"></div>
+                        </div>
+                        <div class="btn-card">
+                            <button>Cancelar Consulta</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="div-extra">
+                        <h2>Fisioterapia</h2>
+                        <div class="infos-consulta">
+                            <p>Nome do Profissional</p>
+                            <h5>Dr. Hannibal Lecter</h5>
+                            <br>
+                            <p>Data: 77/77/7777</p>
+                            <p>Hora: 10:99</p>
+                            <br>
+                            <p>Local: R. Vudu é Prajacu, 666 - Puxa Penas, Rachadores</p>
+                            <div class="imagem-logo"></div>
+                        </div>
+                        <div class="btn-card">
+                            <button>Cancelar Consulta</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="div-extra">
+                        <h2>Fisioterapia</h2>
+                        <div class="infos-consulta">
+                            <p>Nome do Profissional</p>
+                            <h5>Dr. Hannibal Lecter</h5>
+                            <br>
+                            <p>Data: 77/77/7777</p>
+                            <p>Hora: 10:99</p>
+                            <br>
+                            <p>Local: R. Vudu é Prajacu, 666 - Puxa Penas, Rachadores</p>
+                            <div class="imagem-logo"></div>
+                        </div>
+                        <div class="btn-card">
+                            <button>Cancelar Consulta</button>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </span>
+        </article>
+    </main>
+    <footer>
+        <menu class="menu_footer">
+        </menu>
+    </footer>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>
