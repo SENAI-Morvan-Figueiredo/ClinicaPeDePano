@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <title>Fisioterapia pé de pano</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cadastroMed.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+
+            <div class="flex">
+                <div class="logo">
+
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="tratamentos.html">Tratamentos</a></li>
+                        <li><a href="equipe.html">Equipe</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                    </ul>
+                </nav>
+                <!-- botão já logado, essa página é acessada pelo adm -->
+                <div class="btn-logado">
+                    <details>
+                        <summary><img src="../imagens/logado.PNG" alt=""></summary>
+                        <div>
+                            <span><a href="atendimentos.html">Consultas</a></span>
+                            <span><a href="#">Consultas adm</a></span>
+                            <span><a href="agendarC.html">Novo Agendamento</a></span>
+                            <span><a href="alterarUser.html">Alterar Dados</a></span>
+                            <span><a href="alterarMed.html">Alterar Dados Profissional</a></span>
+                            <span><a href="../index.html">Sair</a></span>
+                        </div>
+
+                    </details>
+
+                    <!-- <a href="cadastroUser.html" class="button">
+                        <svg>
+                            <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                        </svg>
+                        LOGIN
+                    </a> -->
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <main class="container-principal">
+        <div class="formulario">
+            <h2>Altere seus Dados</h2>
+            <form action="#">
+                <div class="div-form">
+
+                    <div class="alinhar-inputs">
+                        <div class="single-input input-menor">
+                            <label for="cpf">CPF</label>
+                            <input name="cpf" type="text" class="inputs" placeholder="CPF">
+                        </div>
+                        <div class="single-input input-menor">
+                            <label for="Nome">Nome do Paciente</label>
+                            <input name="cep" type="text" class="inputs" placeholder="Nome do Paciente">
+                        </div>
+                    </div>
+
+                    <div class="alinhar-inputs">
+                        <div class="single-input input-menor">
+                            <label for="senha">Tratamento</label>
+                            <input name="senha" type="password" class="inputs" placeholder="Tratamento">
+                        </div>
+                        <div class="single-input input-menor">
+                            <label for="conf-senha">Profissional</label>
+                            <input name="conf-senha" type="password" class="inputs" placeholder="Profissional">
+                        </div>
+                    </div>
+
+                    <div class="alinhar-inputs">
+                        <div class="single-input input-menor">
+                            <label for="senha">Data</label>
+                            <input name="senha" type="date" class="inputs" placeholder="Digite a senha">
+                        </div>
+                        <div class="single-input input-menor">
+                            <label for="conf-senha">Hora</label>
+                            <input name="hora" type="time" class="inputs">
+                        </div>
+                    </div>
+
+                    <div class="btn-confirma input-menor"><button>Agendar Consulta</button></div>
+
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <menu class="menu_footer">
+        </menu>
+    </footer>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>
