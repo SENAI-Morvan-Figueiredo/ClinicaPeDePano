@@ -99,6 +99,11 @@ form label{
     justify-content: center;
 }
 
+#btn-alterar{
+    margin-top: 10px;
+    gap: 10px;
+}
+
 .btn-confirma button{
     width: 200px;
     height: 40px;
