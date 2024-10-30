@@ -6,37 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicons/search.png">
     <title> Pagina de Cadastro Responsivo</title>
-    <link rel="stylesheet" href="/css/Entrar.css">
+    <link rel="stylesheet" href="/css/cadastroMed.css">
 </head>
 
 <body>
-    <div class="container">
-
-        <div class="title">Entrar</div>
-        <div class="content">
-
+    <main class="container-principal">
+        <div class="formulario">
+            <h2>Entrar</h2>
             <form action="#">
-                <div class="user-details">
+                <div class="div-form">
+                    
+                    <div class="single-input input-maior">
+                        <label for="login">Informe seu Email ou CPF</label>
+                        <input name="login" type="text" class="inputs" placeholder="Informe seu Email ou CPF ">
+                    </div>
+                    <div class="single-input input-maior">
+                        <label for="senha">Nome Social</label>
+                        <input name="senha" type="text" class="inputs" placeholder="Informe sua senha">
+                    </div>
+                  
+    
+                    <div class="alinhar-inputs">
+                        <div class="single-input input-menor"></div>
+                         <div class="btn-confirma input-menor"><button>Entrar</button></div>
 
-                    <div class="input-box">
-                        <span class="details">Digite seu Email ou CPF</span>
-                        <input type="text" placeholder="Digite seu Email ou CPF" required>
-                    </div>
-                    <div class="input-box">
-                        <span class="details">Senha</span>
-                        <input type="text" placeholder="Escreva sua Senha" required>
+                         <div class="single-input input-menor"></div>
+                         <div class="btn-confirma input-menor"><button>Esqueci minha senha</button></div>
+
                     </div>
 
-                    <div class="button">
-                        <input type="submit" value="Esqueci minha Senha">
-                    </div>
-
-                    <div class="button">
-                        <input type="submit" value="Entrar">
-                    </div>
+                    
+                </div>
+                </div>
             </form>
         </div>
-    </div>
+    </main>
 </body>
 
 </html>
