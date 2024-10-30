@@ -1,37 +1,114 @@
 @import url("footer.css");
 @import url("header.css");
+@import url("banner.css");
+
+@font-face {
+    font-family: 'Agdasima';
+    src: url('fonts/Agdasima-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Afacad';
+    src: url('fonts/Afacad-VariableFont_wght.ttf');
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 html {
     background: linear-gradient(to bottom, rgb(223, 231, 225) 0%, #b2ece5 80%);
     background-repeat: no-repeat;
-    background-size: contain;
-}
-
-body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin: 0;
+    background-size: cover;
     min-height: 100vh;
 }
 
-
-.pg-atual{
-
-    color: #12C7B9;
-    transition: .5s;
+body {
+    font-family: 'Afacad', Arial, sans-serif;
+    min-height: 100vh;
 }
 
-
-.pg-atual:hover{
-
-    color: black;
-    text-decoration: underline;
+.container-principal {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
 }
 
+h1 {
+    font-family: 'Afacad';
+    color: #32756C;
+    text-align: center;
+}
 
+details {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: white;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+summary {
+    font-family: 'Afacad';
+    font-size: 1.5rem;
+    padding: 15px 20px;
+    background: linear-gradient(90deg, #30b6a6, #5beab2);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+summary:hover {
+    background: linear-gradient(90deg, #5beab2, #30b6a6);
+}
+
+.dropdown-content {
+    padding: 20px;
+    font-size: 1rem;
+    color: #333;
+    display: none;
+    transition: all 0.3s ease;
+}
+
+details[open] .dropdown-content {
+    display: block;
+}
+
+nav ul li a{
+    font-family: 'Afacad';
+    
+}
+
+h3 {
+    color: #32756C;
+    margin-top: 20px;
+    font-size: 1.3rem;
+}
+
+ul {
+    padding-left: 20px;
+    list-style: disc;
+    color: #32756C;
+}
+
+p, li {
+    font-family: 'Afacad';
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .container-principal {
+        width: 95%;
+    }
+
+    summary {
+        font-size: 1.3rem;
+    }
+
+    p, li {
+        font-size: 0.9rem;
+    }
+}
