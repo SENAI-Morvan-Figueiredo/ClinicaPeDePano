@@ -1,0 +1,1 @@
+let botoes = document.querySelectorAll(".btn");
