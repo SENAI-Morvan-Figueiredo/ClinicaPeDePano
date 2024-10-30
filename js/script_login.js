@@ -1,16 +1,16 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+let botoes = document.querySelectorAll(".btn");
+const inserirConteudo = document.querySelector(".container-info-cadLogin");
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicons/search.png">
-    <title> Pagina de Cadastro Responsivo</title>
-    <link rel="stylesheet" href="../css/cadastroMed.css">
-</head>
+for (const botao of botoes) {
+    botao.addEventListener('click', function(){
+        addHtml(botao.value);
+    });
+}
 
-<body>
-    <main class="container-principal">
+function addHtml(entrada) {
+    if (entrada=='0') {
+        inserirConteudo.innerHTML = 
+        `
         <div class="formulario">
             <h2>Cadastre-se</h2>
             <form action="#">
@@ -106,7 +106,40 @@
                 </div>
             </form>
         </div>
-    </main>
-</body>
+        `
+    }
+    else if(entrada=='1'){
+        inserirConteudo.innerHTML = 
+        `
+        <div class="formulario">
+            <h2>Entrar</h2>
+            <form action="#">
+                <div class="div-form">
+                    
+                    <div class="single-input input-maior">
+                        <label for="login">Informe seu Email ou CPF</label>
+                        <input name="login" type="text" class="inputs" placeholder="Informe seu Email ou CPF ">
+                    </div>
+                    <div class="single-input input-maior">
+                        <label for="senha">Nome Social</label>
+                        <input name="senha" type="text" class="inputs" placeholder="Informe sua senha">
+                    </div>
+                  
+    
+                    <div class="alinhar-inputs">
+                        <div class="single-input input-menor"></div>
+                         <div class="btn-confirma input-menor"><button>Entrar</button></div>
 
-</html>
+                         <div class="single-input input-menor"></div>
+                         <div class="btn-confirma input-menor"><button>Esqueci minha senha</button></div>
+
+                    </div>
+
+                    
+                </div>
+                </div>
+            </form>
+        </div>
+        `
+    }
+}
