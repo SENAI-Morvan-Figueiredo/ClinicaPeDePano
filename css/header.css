@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Agdasima';
+    src: url('fonts/Agdasima-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Afacad';
+    src: url('fonts/Afacad-VariableFont_wght.ttf');
+}
+
 :root {
     --background: #2C2C2C;
     --primary: #299E93;
@@ -75,6 +85,8 @@ header ul li a:hover {
     width: 15%;
     height: 100px;
 }
+
+/* botao login */
 
 .btn-login button {
     width: 120px;
