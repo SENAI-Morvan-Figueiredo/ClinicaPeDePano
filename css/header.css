@@ -53,18 +53,19 @@ header ul {
 
 
 header ul li a {
-    color: #000000;
+    color: #3b3b3b;
     text-decoration: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Afacad';
     font-size: 30px;
     transition: .5s;
+
 }
 
 header ul li a:hover {
     color: #12C7B9;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Afacad';
     font-size: 30px;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .logo {

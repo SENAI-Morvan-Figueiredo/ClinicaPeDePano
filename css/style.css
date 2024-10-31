@@ -1,37 +1,347 @@
 @import url("footer.css");
 @import url("header.css");
+@import url("banner.css");
+
+@font-face {
+    font-family: 'Agdasima';
+    src: url('fonts/Agdasima-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Afacad';
+    src: url('fonts/Afacad-VariableFont_wght.ttf');
+}
+
+:root { 
+    --bg: #F6F8FC;
+    --primary: #ca633c;
+    --secondary: #e36f58;
+    --h2-color: #5B5D72;
+    --text: white;
+    --cube-side: 2.75rem;
+    --cube-side-half: calc(var(--cube-side) / 2);
+    --border-radius: 2rem;
+    --btn-bg: #2ebfb08b;
+    --glow-size: 0.5rem;
+    --facebook: #1877f2;
+    --github: #24292e;
+    --instagram: #e4405f;
+    --linkedin: #0177b5;
+  }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 html {
     background: linear-gradient(to bottom, rgb(223, 231, 225) 0%, #b2ece5 80%);
     background-repeat: no-repeat;
-    background-size: contain;
-}
-
-body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin: 0;
+    background-size: cover;
     min-height: 100vh;
 }
 
+body {
+    font-family: 'Afacad', Arial, sans-serif;
+    min-height: 100vh;
+}
 
-.pg-atual{
+.container-principal {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+}
 
-    color: #12C7B9;
+h1 {
+    font-family: 'Afacad';
+    color: #32756C;
+    text-align: center;
+}
+
+details {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: white;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+summary {
+    font-family: 'Afacad';
+    font-size: 1.5rem;
+    padding: 15px 20px;
+    background: linear-gradient(90deg, #30b6a6, #5beab2);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+summary:hover {
+    background: linear-gradient(90deg, #5beab2, #30b6a6);
+}
+
+.dropdown-content {
+    padding: 20px;
+    font-size: 1rem;
+    color: #333;
+    display: none;
+    transition: all 0.3s ease;
+}
+
+details[open] .dropdown-content {
+    display: block;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    height: 100%;
+    width: 90%;
+    margin: auto;
+}
+
+.flex nav{
+    width: 80%;
+}
+
+header{
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to right, rgba(255, 255, 255) 0% , #b2ece5 80%);
+
+}
+
+header.rolagem {
+    background-color: #fff;
+    padding: 20px;
+}
+
+header.rolagem a,
+header.rolagem li {
+    color: #2C4845;
+}
+
+header li {
+    font-size: 40px;
+    color: #fff;
+    width: fit-content;
+    height: fit-content;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+header ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Afacad';
+    font-size: 30px;
     transition: .5s;
 }
 
+header ul li a:hover {
+    color: #12C7B9;
+    font-family: 'Afacad';
+    font-size: 30px;
+    text-decoration: none;
+}
 
-.pg-atual:hover{
-
-    color: black;
-    text-decoration: underline;
+.logo {
+    background-image: url('../imagens/logoinvi.png');
+    background-size: 150% 180%;
+    background-position: 50%;
+    width: 15%;
+    height: 100px;
 }
 
 
+
+/* botao login */
+
+.btn-login button {
+    width: 120px;
+    height: 40px;
+    border: 0;
+    background-color: #299E93;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.button {
+    color: var(--default);
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 2.5rem;
+    max-width: 160px;
+    width: 100%;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    transition: all 1s ease-in;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px black;
+}
+
+.button:hover {
+    color: black;
+}
+
+.button svg {
+    height: 40px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.button rect {
+    fill: none;
+    stroke: var(--default);
+    stroke-width: 2;
+    stroke-dasharray: 450, 0;
+    transition: all 0.5s linear;
+    color: #299E93;
+}
+
+.button:hover rect {
+    stroke-width: 5;
+    stroke-dasharray: 120, 200;
+    stroke-dashoffset: 48;
+    stroke: var(--primary);
+    transition: all 2s cubic-bezier(0.22, 1, 0.25, 1);
+}
+
+.btn-logado summary{
+    list-style: none;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+}
+
+.btn-logado details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn-logado div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    right:0;
+    width: fit-content;
+    margin-top: 35px;
+    padding: 10px;
+    background: #b2ece5;
+    z-index: 3;
+}
+
+.btn-logado a{
+    width: fit-content;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+}
+
+.btn-logado img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+h3 {
+    color: #32756C;
+    margin-top: 20px;
+    font-size: 1.3rem;
+}
+
+ul {
+    padding-left: 20px;
+    list-style: disc;
+    color: #32756C;
+}
+
+p, li {
+    font-family: 'Afacad';
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .container-principal {
+        width: 95%;
+    }
+
+    summary {
+        font-size: 1.3rem;
+    }
+
+    p, li {
+        font-size: 0.9rem;
+    }
+}
+
+.fisioicon{
+    height: 5rem;
+    width: 5rem;
+}
+
+.fisioimg{
+    height: 20rem;
+    width: 20rem;
+}
+
+.carousel{
+    width: 45rem;
+    height: 25rem;
+    border-radius: 1rem;
+    
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.carousel{
+    display:flex;
+    margin-left: 600px;
+}
+
+.carousel > img{
+    flex: 0 0 100%; /* grow, shrink, basis */
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel{
+    position:relative;
+    margin-left: 290px;
+    margin-bottom: 10px;
+}
+
+.carousel > img{
+    position: sticky;
+    left:0;
+}
+
+.carousel {
+    scroll-snap-type: x mandatory;
+}
+
+.carousel > img{
+    scroll-snap-align: start;
+}
