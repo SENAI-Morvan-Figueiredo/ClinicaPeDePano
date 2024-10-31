@@ -45,21 +45,65 @@ html {
 body {
     font-family: 'Afacad', Arial, sans-serif;
     min-height: 100vh;
+    background-color: #589f815d;
+   
 }
+
+/* Background Mask */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 200vh;
+    width: 200vw;
+    z-index: -1;
+    background-image: url('/imagens/bamboo2.jpeg'), url('/imagens/circle.avif'); /* image1 and image2 */
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: screen; /* or another mode like multiply, overlay, etc. */
+    filter: brightness(0.8); /* Optional: Adjust brightness for better visibility */
+}
+
+
 
 .container-principal {
     width: 80%;
     margin: 50px auto;
     padding: 20px;
+    background-color: #39856753;
+    backdrop-filter: blur(1px);
+    border-radius: 20px;
 }
 
 h1 {
     font-family: 'Afacad';
     color: #32756C;
     text-align: center;
+    margin-top: 20px; /* Ajuste opcional para espaçamento */
 }
 
-details {
+h2 {
+    font-family: 'Afacad';
+    color: #32756C;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.tratamentos{
+    font-family: 'Afacad';
+    font-size: 1.5rem;
+    padding: 15px 20px;
+    background: linear-gradient(90deg, #30b6a6, #5beab2);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+    height: 5rem;
+    transition: 1s;
+}
+
+.dropdown {
     margin-bottom: 20px;
     border-radius: 10px;
     background: white;
@@ -68,18 +112,17 @@ details {
     transition: all 0.3s ease;
 }
 
-summary {
-    font-family: 'Afacad';
-    font-size: 1.5rem;
-    padding: 15px 20px;
-    background: linear-gradient(90deg, #30b6a6, #5beab2);
-    color: #fff;
-    cursor: pointer;
-    border-radius: 8px;
+
+
+.tratamentos:hover {
+    background: linear-gradient(90deg, #5beab2, #30b6a6);
+    transition: 1s;
 }
 
-summary:hover {
-    background: linear-gradient(90deg, #5beab2, #30b6a6);
+summary h2{
+    text-align: center;
+    font-size: 20px;
+    margin-top: -10px;
 }
 
 .dropdown-content {
@@ -130,8 +173,11 @@ p, li {
 }
 
 .fisioicon{
-    height: 5rem;
-    width: 5rem;
+    height: 4rem;
+    width: 4rem;
+    margin-top: -55px;
+    margin-left: 800px;
+    position: fixed;
 }
 
 .fisioimg{
@@ -159,15 +205,25 @@ p, li {
     object-fit: cover;
 }
 
-.carousel{
-    position:relative;
-    margin-left: 290px;
-    margin-bottom: 10px;
+.carousel {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    width: 100%;
+    max-width: 600px; /* Define uma largura máxima */
+    height: 25rem;
+    border-radius: 1rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin: 10px auto; /* Centraliza o container */
+    scroll-snap-type: x mandatory;
 }
 
-.carousel > img{
-    position: sticky;
-    left:0;
+
+.carousel > img {
+    flex: 0 0 100%;
+    height: 100%;
+    object-fit: cover;
+    scroll-snap-align: start;
 }
 
 .carousel {

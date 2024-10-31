@@ -8,3 +8,6 @@ Projeto do grupo Maculados - DEV Noite - SENAI Morvan Figueiredo - 2024
 
 Link do Figma:
 https://www.figma.com/design/zFHi54RiTrKcR8ijOQZlqI/Fisioterapia-p%C3%A9-de-pano?node-id=0-1&node-type=canvas&t=oqdMIUxx3P3I6g4Q-0
+
+Link da Página
+https://senai-morvan-figueiredo.github.io/ClinicaPeDePano/
