@@ -1,0 +1,11 @@
+.tabela{
+    width: fit-content;
+    align-self: center;
+    height: 400px;
+    overflow: scroll;
+}
+
+.tabela th{
+    display: flex;
+    
+}

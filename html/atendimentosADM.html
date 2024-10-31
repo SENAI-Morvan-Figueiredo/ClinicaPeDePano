@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <title>Fisioterapia pé de pano</title>
+     <link rel="stylesheet" href="../css/style.css">
+     <link rel="stylesheet" href="../css/atendimento.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+
+            <div class="flex">
+                <div class="logo">
+                    
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="tratamentos.html">Tratamentos</a></li>
+                        <li><a href="equipe.html">Equipe</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                    </ul>
+                </nav>
+
+                <!-- alterar para botão logado -->
+                <div class="btn-logado">
+                    <details>
+                        <summary><img src="../imagens/logado.PNG" alt=""></summary>
+                        <div>
+                            <span><a href="atendimentos.html">Consultas</a></span>
+                            <span><a href="atendimentosADM.html">Consultas adm</a></span>
+                            <span><a href="agendarC.html">Novo Agendamento</a></span>
+                            <span><a href="agendarADM.html">Novo Agendamento ADM</a></span>
+                            <span><a href="cadastroMed.html">Cadastrar Profissional</a></span>
+                            <span><a href="alterarUser.html">Alterar Dados</a></span>
+                            <span><a href="alterarMed.html">Alterar Dados Profissional</a></span>
+                            <span><a href="../index.html">Sair</a></span>
+                        </div>
+
+                    </details>
+                    
+                    <!-- <a href="cadastroUser.html" class="button">
+                        <svg>
+                            <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                        </svg>
+                        LOGIN
+                    </a> -->
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main class="container-principal">
+        <h1>Consultar Atendimentos</h1>
+        <article>
+            <h2>Filtrar</h2>
+            <span class="filtros">
+                <div class="input-filtro">
+                    <label for="tratamentos">Tratamentos</label>
+                    <input name="tratamentos" list="tratamentos" placeholder="tipo de tratamento">
+                    <datalist id="tratamentos">
+                        <option value="Acupuntura">
+                        <option value="Fisioterapia">
+                        <option value="Pilates">
+                    </datalist>
+                </div>
+                <div class="input-filtro">
+                    <label for="nome">Nome do Profissional</label>
+                    <input name="nome-profissional" list="nome-profissional" placeholder="nome do profissional selecionado">
+                    <datalist id="nome-profissional">
+                        <option value="Elmer Hartman">
+                        <option value="Emmett Brown">
+                        <option value="Hannibal Lecter">
+                        <option value="Hans Chucrute">
+                        <option value="Mundo">
+                        <option value="Patrick Estrela">
+                    </datalist>
+                </div>
+                <div class="input-filtro">
+                    <label for="data">Data de Agendamento</label>
+                    <input type="date" name="data">
+                </div>
+                
+            </span>
+            <span class="btns">
+                <button>Limpar</button>
+                <button>Pesquisar</button>
+            </span>
+            <span class="tabela">
+                <table>
+                    <tr>
+                      <th>Nome do Paciente</th>
+                      <th>Nome do Profissional</th>
+                      <th>Tratamento</th>
+                      <th>Data do Atendimento</th>
+                      <th>Horário</th>
+                      <th>Informações</th>
+                      <th>Alterar</th>
+                    </tr>
+                    <tr>
+                      <td>Alfredo Regner</td>
+                      <td>Patrick Estrela</td>
+                      <td>Fisioterapia</td>
+                      <td>30/10/2024</td>
+                      <td>10:30</td>
+                      <td><a href="sobre_consulta.html">Detalhes</a></td>
+                      <td><a href="editar_agendamento.html">Editar</a></td>
+                    </tr>
+                    <tr>
+                      <td>João Henrique</td>
+                      <td>Hans Chucrute</td>
+                      <td>Pilates</td>
+                      <td>03/11/2024</td>
+                      <td>13:00</td>
+                      <td><a href="sobre_consulta.html">Detalhes</a></td>
+                      <td><a href="editar_agendamento.html">Editar</a></td>
+                    </tr>
+                    <tr>
+                      <td>Carla Machado</td>
+                      <td>Emmett Brown</td>
+                      <td>Acupuntura</td>
+                      <td>08/10/2024</td>
+                      <td>17:30</td>
+                      <td><a href="sobre_consulta.html">Detalhes</a></td>
+                      <td><a href="editar_agendamento.html">Editar</a></td>
+                    </tr>
+                  </table>
+            </span>
+        </article>
+    </main>
+    <footer>
+        <menu class="menu_footer">
+        </menu>
+    </footer>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>
