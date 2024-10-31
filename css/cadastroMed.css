@@ -7,7 +7,7 @@
 .formulario{
     width: 60%;
     height: fit-content;
-    margin: auto;
+    margin: 10px auto;
     padding: 5px;
     background-color: #fff;
     border-radius: 5px;
@@ -113,4 +113,30 @@ form label{
     box-shadow: 2px 2px 5px rgb(155, 155, 155);
     border: none;
     border-radius: 8px;
+}
+
+.consultas{ 
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    width:80% ;
+    margin:5%;
+    border-radius: 20px ;
+}
+
+h2{
+    text-align: center;
+    padding:2%;
+}
+table{
+    padding: 1%;
+    line-height: 4px;
+}
+
+.anotacao{
+    width:80% ;
+    height:300px ;
+    background-color: aliceblue;
+    margin:5%;
+    border-radius: 20px ;
 }

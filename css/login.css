@@ -1,7 +1,5 @@
-@import url("footer.css");
-@import url("header.css");
-@import url("banner.css");
 @import url("botoes.css");
+@import url("cadastroMed.css");
 * {
     margin: 0;
     padding: 0;
