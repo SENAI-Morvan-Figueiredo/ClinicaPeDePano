@@ -125,7 +125,7 @@ header ul li a:hover {
     position: absolute;
     right: 0;
     width: fit-content;
-    margin-top: -90px;
+    margin-top: 1rem;
     padding: 10px;
     backdrop-filter: blur(13px) brightness(0.8);
     z-index: 3;
