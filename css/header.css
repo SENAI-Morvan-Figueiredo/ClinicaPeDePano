@@ -59,7 +59,7 @@ header ul {
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
-    gap: 6rem; 
+   
 }
 
 
@@ -76,7 +76,6 @@ header ul li a {
     flex-direction: row;
     margin-bottom: 5rem;
     margin-top: 0.625rem;
-    gap: 7rem; 
     margin-left: -2.75px;
 }
 
