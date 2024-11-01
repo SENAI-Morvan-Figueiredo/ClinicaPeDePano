@@ -22,11 +22,7 @@
     --cube-side-half: calc(var(--cube-side) / 2);
     --border-radius: 2rem;
     --btn-bg: #2ebfb08b;
-    --glow-size: 0.5rem;
-    --facebook: #1877f2;
-    --github: #24292e;
-    --instagram: #e4405f;
-    --linkedin: #0177b5;
+
   }
 
 * {
@@ -78,9 +74,10 @@ body::before {
 
 h1 {
     font-family: 'Afacad';
-    color: #32756C;
+    color: #ffffff;
     text-align: center;
     margin-top: 20px; /* Ajuste opcional para espaçamento */
+    font-weight: lighter;
 }
 
 h2 {
@@ -138,9 +135,6 @@ details[open] .dropdown-content {
 }
 
 
-
-
-
 h3 {
     color: #32756C;
     margin-top: 20px;
@@ -185,51 +179,105 @@ p, li {
     width: 20rem;
 }
 
-.carousel{
-    width: 45rem;
-    height: 25rem;
-    border-radius: 1rem;
-    
-    overflow-x: auto;
-    overflow-y: hidden;
-}
-
-.carousel{
-    display:flex;
-    margin-left: 600px;
-}
-
-.carousel > img{
-    flex: 0 0 100%; /* grow, shrink, basis */
-    height: 100%;
-    object-fit: cover;
-}
-
-.carousel {
+/* From Uiverse.io by codebykay101 */ 
+.container {
+    position: relative;
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container .glass {
+    position: relative;
+    width: 180px;
+    height: 200px;
+    background: linear-gradient(#fff2, transparent);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 10px;
+    margin: 0 -45px;
+    backdrop-filter: blur(10px);
+    transform: rotate(calc(var(--r) * 1deg));
+  }
+  
+  .container:hover .glass {
+    transform: rotate(0deg);
+    margin: 0 10px;
+  }
+  
+  .container .glass::before {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
     width: 100%;
-    max-width: 600px; /* Define uma largura máxima */
-    height: 25rem;
-    border-radius: 1rem;
-    overflow-x: auto;
-    overflow-y: hidden;
-    margin: 10px auto; /* Centraliza o container */
-    scroll-snap-type: x mandatory;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  .container .glass svg {
+    font-size: 2.5em;
+    fill: #fff;
+  }
+  
+.carroimage{
+    height: 15rem;
+    width: 15rem;
 }
 
-
-.carousel > img {
-    flex: 0 0 100%;
-    height: 100%;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .container .carroimage {
+    width: 200px;
+    height: 200px;
     object-fit: cover;
-    scroll-snap-align: start;
-}
-
-.carousel {
-    scroll-snap-type: x mandatory;
-}
-
-.carousel > img{
-    scroll-snap-align: start;
-}
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px; /* Ajuste para o estilo desejado */
+  }
+  
+  .container .carroimage:hover {
+    transform: scale(1.1); /* Efeito de zoom */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Efeito de sombra */
+    border: 2px solid #00ff99; /* Cor da borda ao passar o mouse */
+  }
+  
+  /* Estilo para a div glass */
+  .container .glass {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .container .glass:hover {
+    transform: scale(1.05); /* Efeito ao passar o mouse */
+  }
+  
+  .container .glass svg {
+    fill: #333;
+    transition: fill 0.3s ease;
+  }
+  
+  .container .glass:hover svg {
+    fill: #00BFFF; /* Cor do ícone ao passar o mouse */
+  }
+  
