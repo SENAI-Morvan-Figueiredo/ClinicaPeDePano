@@ -91,7 +91,7 @@ header ul li a:hover {
     background-image: url('../imagens/logoinvi.png');
     background-size: 150% 180%;
     background-position: 50%;
-    width: 25%;
+    width: 120px;
     height: 70px;
     margin-top: -90px;
     display: flex;
