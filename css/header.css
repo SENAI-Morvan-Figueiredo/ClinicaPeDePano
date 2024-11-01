@@ -59,6 +59,7 @@ header ul {
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
+    gap: 6rem; 
 }
 
 
@@ -66,19 +67,19 @@ header ul {
 header ul li a {
     color: #000000;
     text-decoration: none;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1.3rem;
     transition: .5s;
     text-align: center;
     align-items: center;
     display: flex;
     flex-direction: row;
-    margin-bottom: 80px;
-    margin-top: 10px;
-    gap: 50px;
-    margin-left: -60px;
-    
+    margin-bottom: 5rem;
+    margin-top: 0.625rem;
+    gap: 7rem; 
+    margin-left: -2.75px;
 }
+
 
 header ul li a:hover {
     color: #ffffff;
