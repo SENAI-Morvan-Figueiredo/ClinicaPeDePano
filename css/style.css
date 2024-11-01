@@ -1,6 +1,5 @@
 @import url("footer.css");
 @import url("header.css");
-@import url("banner.css");
 @import url("botoes.css");
 @font-face {
     font-family: 'Agdasima';
@@ -64,9 +63,9 @@ body::before {
     filter: brightness(1.2) contrast(1.1);
 }
 
-.btn-a{
+/* .btn-a{
     margin-bottom: 5rem;
-}
+} */
 
 .container-principal {
     width: 80%;
@@ -146,7 +145,7 @@ h3 {
     font-size: 1.3rem;
 }
 
-ul {
+/* ul {
     padding-left: 20px;
     list-style: disc;
     color: #32756C;
@@ -155,7 +154,7 @@ ul {
 p, li {
     font-family: 'Afacad';
     margin-bottom: 10px;
-}
+} */
 
 @media (max-width: 768px) {
     .container-principal {
