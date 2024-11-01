@@ -164,4 +164,6 @@ header ul li a:hover {
     width: 60px;
     height: 60px;
     border-radius: 50%;
+    margin-top: -20rem;
+    margin-bottom: 1rem
 }
