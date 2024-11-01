@@ -10,7 +10,7 @@ main h1 {
 }
 
 main h3 {
-    background: linear-gradient(to right, #299E93, #88C9C3, #D4ECE9 70%);
+    background: linear-gradient(to right, #32756C, #51b3a6 70%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     display: flex;

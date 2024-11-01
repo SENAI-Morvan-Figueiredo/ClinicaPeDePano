@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Agdasima';
+    src: url('fonts/Agdasima-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Afacad';
+    src: url('fonts/Afacad-VariableFont_wght.ttf');
+}
+
 :root {
     --background: #2C2C2C;
     --primary: #299E93;
@@ -76,64 +86,9 @@ header ul li a:hover {
     height: 100px;
 }
 
-.btn-login button {
-    width: 120px;
-    height: 40px;
-    border: 0;
-    background-color: #299E93;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 10px;
-}
+/* botao login */
+/* From Uiverse.io by shah1345 */ 
 
-.button {
-    color: var(--default);
-    cursor: pointer;
-    font-size: 1rem;
-    line-height: 2.5rem;
-    max-width: 160px;
-    width: 100%;
-    letter-spacing: 0.3rem;
-    font-weight: 600;
-    position: relative;
-    text-decoration: none;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    transition: all 1s ease-in;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #ffffff;
-    box-shadow: 0 2px 8px black;
-}
-
-.button:hover {
-    color: black;
-}
-
-.button svg {
-    height: 40px;
-    left: 0;
-    top: 0;
-    position: absolute;
-    width: 100%;
-}
-
-.button rect {
-    fill: none;
-    stroke: var(--default);
-    stroke-width: 2;
-    stroke-dasharray: 450, 0;
-    transition: all 0.5s linear;
-    color: #299E93;
-}
-
-.button:hover rect {
-    stroke-width: 5;
-    stroke-dasharray: 120, 200;
-    stroke-dashoffset: 48;
-    stroke: var(--primary);
-    transition: all 2s cubic-bezier(0.22, 1, 0.25, 1);
-}
 
 .btn-logado summary{
     list-style: none;
@@ -156,17 +111,23 @@ header ul li a:hover {
     position: absolute;
     right:0;
     width: fit-content;
-    margin-top: 35px;
+    margin-top: 2.39rem;
     padding: 10px;
-    background: #b2ece5;
+    backdrop-filter: blur(13px) brightness(0.8);
     z-index: 3;
+    border-bottom-left-radius: 10px;
 }
 
 .btn-logado a{
     width: fit-content;
     text-decoration: none;
     font-size: 20px;
-    color: #000;
+    color: #fff;
+    transition: all 0.2s ease-in;
+}
+
+.btn-logado a:hover{
+    color: #18dec3;
 }
 
 .btn-logado img{
