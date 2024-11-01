@@ -12,7 +12,7 @@
     src: url('fonts/Afacad-VariableFont_wght.ttf');
 }
 
-:root { 
+:root {
     --bg: #F6F8FC;
     --primary: #ca633c;
     --secondary: #e36f58;
@@ -22,8 +22,7 @@
     --cube-side-half: calc(var(--cube-side) / 2);
     --border-radius: 2rem;
     --btn-bg: #2ebfb08b;
-
-  }
+}
 
 * {
     margin: 0;
@@ -32,7 +31,7 @@
 }
 
 html {
-    background: linear-gradient(to bottom, rgb(223, 231, 225) 0%, #b2ece5 80%);
+    background: linear-gradient(to bottom, rgba(212, 233, 226, 0.4) 0%, rgba(138, 197, 176, 0.4) 100%);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -41,8 +40,7 @@ html {
 body {
     font-family: 'Afacad', Arial, sans-serif;
     min-height: 100vh;
-    background-color: #589f815d;
-   
+    background-color: transparent; /* Removemos a cor sólida para não cobrir a imagem */
 }
 
 /* Background Mask */
@@ -54,11 +52,16 @@ body::before {
     height: 200vh;
     width: 200vw;
     z-index: -1;
-    background-image: url('/imagens/bamboo2.jpeg'), url('/imagens/circle.avif'); /* image1 and image2 */
+    background-image: url('/imagens/bamboo2.jpeg'), url('/imagens/circle.avif');
     background-size: cover;
     background-position: center;
-    background-blend-mode: screen; /* or another mode like multiply, overlay, etc. */
-    filter: brightness(0.8); /* Optional: Adjust brightness for better visibility */
+    
+    /* Aumentamos a opacidade e removemos blend mode para mais nitidez */
+    opacity: 1; 
+    background-blend-mode: normal;
+    
+    /* Removendo a máscara antiga e aplicando nitidez com filtro */
+    filter: brightness(1.2) contrast(1.1);
 }
 
 .btn-a{
