@@ -117,20 +117,36 @@ header ul li a:hover {
     justify-content: center;
 }
 
-.btn-logado div{
+.btn-logado div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    gap: 1.25rem;
     position: absolute;
-    right:0;
+    right: 0;
     width: fit-content;
     margin-top: 2.39rem;
     padding: 10px;
     backdrop-filter: blur(13px) brightness(0.8);
     z-index: 3;
     border-bottom-left-radius: 10px;
+    margin-right: 0.625rem;
+    border-radius: 20px;
+    font-family: 'Afacad';
+    background-color:#106359;
 }
+
+/* Estilo para as linhas divisórias */
+.btn-logado div > * {
+    border-bottom: 1px solid #ffffff44; /* Cor e opacidade da linha */
+    padding-bottom: 0.625rem; /* Espaço entre a linha e o conteúdo */
+}
+
+/* Remove a linha do último elemento */
+.btn-logado div > *:last-child {
+    border-bottom: none;
+}
+
 
 .btn-logado a{
     width: fit-content;
