@@ -13,9 +13,7 @@
     --primary: #299E93;
     /* --default: #fff; */
 }
-.container{
-    
-}
+
 .flex{
     display: flex;
     flex-direction: row;
