@@ -21,30 +21,22 @@
     align-self: center;
     height: 100%;
     width: 90%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .flex nav{
     width: 80%;
+    height: fit-content;
 }
 
 header{
     width: 100%;
-    padding: 20px;
     background: linear-gradient(to right, rgb(255, 255, 255) 0% , #106359 100%);
-    height: 5rem;
+    height: fit-content;
+    padding: 20px;
     box-shadow: 0 0 12px black;
 }
 
-header.rolagem {
-    background-color: #fff;
-    padding: 20px;
-}
-
-header.rolagem a,
-header.rolagem li {
-    color: #2C4845;
-}
 
 header li {
     font-size: 40px;
@@ -74,9 +66,9 @@ header ul li a {
     align-items: center;
     display: flex;
     flex-direction: row;
-    margin-bottom: 5rem;
+    /* margin-bottom: 5rem;
     margin-top: 0.625rem;
-    margin-left: -2.75px;
+    margin-left: -2.75px; */
 }
 
 
@@ -93,14 +85,14 @@ header ul li a:hover {
     background-position: 50%;
     width: 120px;
     height: 70px;
-    margin-top: -90px;
+    /* margin-top: -90px; */
     display: flex;
 }
 
 /* botao login */
 /* From Uiverse.io by shah1345 */ 
 
-.btn-a{
+/* .btn-a{
     margin-bottom: 5rem;
     
 }
@@ -139,6 +131,8 @@ header ul li a:hover {
     font-family: 'Afacad';
     text-align: center;
 }
+
+} */
 
 .btn-logado summary{
     list-style: none;
@@ -226,7 +220,5 @@ header ul li a:hover {
     
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
 }
-
-
 
 
