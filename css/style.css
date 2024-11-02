@@ -51,7 +51,7 @@ body::before {
     height: 200vh;
     width: 200vw;
     z-index: -1;
-    background-image: url('/imagens/bamboo2.jpeg'), url('/imagens/circle.avif');
+    background-image: url('../imagens/bamboo2.jpeg'), url('../imagens/circle.avif');
     background-size: cover;
     background-position: center;
     
