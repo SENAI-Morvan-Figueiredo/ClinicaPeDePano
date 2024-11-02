@@ -41,6 +41,9 @@
 .localizacao h1 {
     padding: 10px;
     align-self: center;
+    backdrop-filter: blur(10px);
+    color: #299E93;
+    border-radius: 20px;
 }
 
 .localizacao h3 {
