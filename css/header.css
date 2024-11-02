@@ -95,7 +95,7 @@ header ul li a:hover {
 /* .btn-a{
     margin-bottom: 5rem;
     
-}
+}*/
 
 .btn-a::before {
     content: '';
@@ -132,7 +132,6 @@ header ul li a:hover {
     text-align: center;
 }
 
-} */
 
 .btn-logado summary{
     list-style: none;
@@ -199,8 +198,6 @@ header ul li a:hover {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    margin-top: -20rem;
-    margin-bottom: 1rem;
     border: solid 2px #fff; /* Borda branca */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(0, 123, 255, 0.8); /* Efeito glow */
     animation: glowAnimation 1.5s infinite alternate; /* Animação de glow */
