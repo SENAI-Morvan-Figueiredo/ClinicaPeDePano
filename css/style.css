@@ -1,6 +1,5 @@
 @import url("footer.css");
 @import url("header.css");
-@import url("banner.css");
 @import url("botoes.css");
 @font-face {
     font-family: 'Agdasima';
@@ -27,7 +26,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 html {
@@ -64,9 +63,6 @@ body::before {
     filter: brightness(1.2) contrast(1.1);
 }
 
-.btn-a{
-    margin-bottom: 5rem;
-}
 
 .container-principal {
     width: 80%;
@@ -142,20 +138,20 @@ details[open] .dropdown-content {
 
 h3 {
     color: #32756C;
-    margin-top: 20px;
+   
     font-size: 1.3rem;
 }
 
-ul {
+.dropdown-content ul {
     padding-left: 20px;
     list-style: disc;
     color: #32756C;
 }
 
-p, li {
+.dropdown-content p,.dropdown-content li {
     font-family: 'Afacad';
     margin-bottom: 10px;
-}
+} 
 
 @media (max-width: 768px) {
     .container-principal {
@@ -190,6 +186,8 @@ p, li {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
   }
   
   .container .glass {
@@ -236,13 +234,6 @@ p, li {
     width: 15rem;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
   
   .container .carroimage {
     width: 300px;
