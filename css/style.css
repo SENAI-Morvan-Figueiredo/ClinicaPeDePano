@@ -165,6 +165,12 @@ h3 {
     p, li {
         font-size: 0.9rem;
     }
+    .fisioicon{
+        height: 4rem;
+        width: 4rem;
+        margin-top: 0;
+        margin-left: 0;
+    }
 }
 
 .fisioicon{
@@ -172,7 +178,6 @@ h3 {
     width: 4rem;
     margin-top: -55px;
     margin-left: 800px;
-    position: fixed;
 }
 
 .fisioimg{
