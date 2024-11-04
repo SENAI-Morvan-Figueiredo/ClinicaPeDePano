@@ -13,3 +13,4 @@ Link da Página:
 https://senai-morvan-figueiredo.github.io/ClinicaPeDePano/
 
 Link do Notion:
+https://www.notion.so/invite/1337abe1e8f4ef80928688874fa1b68e11891b01
