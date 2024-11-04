@@ -121,7 +121,7 @@ function addHtml(entrada) {
                         <input name="login" type="text" class="inputs" placeholder="Informe seu Email ou CPF ">
                     </div>
                     <div class="single-input input-maior">
-                        <label for="senha">Nome Social</label>
+                        <label for="senha">Informe sua Senha</label>
                         <input name="senha" type="text" class="inputs" placeholder="Informe sua senha">
                     </div>
                   
