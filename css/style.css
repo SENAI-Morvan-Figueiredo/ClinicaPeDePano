@@ -66,6 +66,18 @@ body::before {
     filter: brightness(1.2) contrast(1.1);
 }
 
+.main-banner{
+    width: 100%;
+    height: fit-content;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-banner img{
+    width: 90%;
+    border-radius: 20px;
+}
 
 .container-principal {
     width: 80%;
