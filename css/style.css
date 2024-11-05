@@ -29,16 +29,18 @@
     /* box-sizing: border-box; */
 }
 
-/* html {
-    background: linear-gradient(to bottom, rgba(212, 233, 226, 0.4) 0%, rgba(138, 197, 176, 0.4) 100%);
+html {
+    /* background: linear-gradient(to bottom, rgba(212, 233, 226, 0.4) 0%, rgba(138, 197, 176, 0.4) 100%);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
-} */
+    min-height: 100vh; */
+}
 
 body {
     font-family: 'Afacad', Arial, sans-serif;
     min-height: 100vh;
+    width: 100%;   
+    position: relative;
     background-color: transparent; /*Removemos a cor sólida para não cobrir a imagem*/
     overflow-x: hidden;
 }
