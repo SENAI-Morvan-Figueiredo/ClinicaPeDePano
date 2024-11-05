@@ -34,11 +34,11 @@ footer{
 }
 
 .icones-social{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: #b2ece5;
 
     display: inline-flex;
-    gap: 0.5rem;
+    gap: 1rem;
 
     width: fit-content;
     height: fit-content;
