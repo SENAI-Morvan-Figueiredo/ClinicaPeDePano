@@ -121,18 +121,18 @@ function addHtml(entrada) {
                         <input name="login" type="text" class="inputs" placeholder="Informe seu Email ou CPF ">
                     </div>
                     <div class="single-input input-maior">
-                        <label for="senha">Nome Social</label>
-                        <input name="senha" type="text" class="inputs" placeholder="Informe sua senha">
+                        <label for="senha">Senha</label>
+                        <input name="senha" type="password" class="inputs" placeholder="Informe sua senha">
                     </div>
                   
     
                     <div class="alinhar-inputs">
-                        <div class="single-input input-menor"></div>
-                         <div class="btn-confirma input-menor"><button>Entrar</button></div>
-
-                         <div class="single-input input-menor"></div>
-                         <div class="btn-confirma input-menor"><button>Esqueci minha senha</button></div>
-
+                        <div class="single-input input-menor">
+                         <div class="btn-a btn-confirma input-menor"><input type="submit" value="Entrar"></div>
+                        </div>
+                        <div class="single-input input-menor">
+                         <div class="btn-a btn-confirma input-menor"><input type="submit" value="Esqueci a Senha"></div>
+                        </div>
                     </div>
 
                     
