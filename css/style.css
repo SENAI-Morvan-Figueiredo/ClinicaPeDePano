@@ -29,17 +29,18 @@
     /* box-sizing: border-box; */
 }
 
-html {
+/* html {
     background: linear-gradient(to bottom, rgba(212, 233, 226, 0.4) 0%, rgba(138, 197, 176, 0.4) 100%);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
-}
+} */
 
 body {
     font-family: 'Afacad', Arial, sans-serif;
     min-height: 100vh;
-    background-color: transparent; /* Removemos a cor sólida para não cobrir a imagem */
+    background-color: transparent; /*Removemos a cor sólida para não cobrir a imagem*/
+    overflow-x: hidden;
 }
 
 /* Background Mask */
@@ -48,8 +49,8 @@ body::before {
     position: fixed;
     top: 0;
     left: 0;
-    height: 200vh;
-    width: 200vw;
+    height: 100%;
+    width: 100%;
     z-index: -1;
     background-image: url('/imagens/bamboo2.jpeg'), url('/imagens/circle.avif');
     background-size: cover;
@@ -178,7 +179,7 @@ h3 {
 .fisioimg{
     height: 20rem;
     width: 20rem;
-}
+} 
 
 /* From Uiverse.io by codebykay101 */ 
 .container {
@@ -224,7 +225,7 @@ h3 {
     align-items: center;
     color: #fff;
   }
-  .container .glass svg {
+   .container .glass svg {
     font-size: 2.5em;
     fill: #fff;
   }
@@ -232,7 +233,7 @@ h3 {
 .carroimage{
     height: 15rem;
     width: 15rem;
-}
+} 
 
   
   .container .carroimage {
@@ -248,7 +249,7 @@ h3 {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
     border: 2px solid #00ff99; 
   }
-  
+   
   /* Estilo para a div glass */
   .container .glass {
     position: relative;
