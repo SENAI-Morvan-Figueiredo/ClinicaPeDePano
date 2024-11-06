@@ -131,7 +131,9 @@ header ul li a:hover {
     font-family: 'Afacad';
     text-align: center;
 }
-
+.btn-logado{
+    position: relative;
+}
 
 .btn-logado summary{
     list-style: none;
@@ -147,22 +149,32 @@ header ul li a:hover {
 }
 
 .btn-logado div {
+    /* flexbox */
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1.25rem;
+    
+    /* posicionamento */
     position: absolute;
     right: 0;
-    width: 15rem;
-    margin-top: 1rem;
-    padding: 10px;
-    backdrop-filter: blur(13px) brightness(0.8);
-    z-index: 3;
-    border-bottom-left-radius: 10px;
     margin-right: -3.625rem;
+    margin-top: 1.3rem;
+    z-index: 3;
+    
+    /* tamanho */
+    width: fit-content;
+    padding: 1rem;
+    
+    /* fundo e borda */
+    backdrop-filter: blur(13px) brightness(0.8);
     border-radius: 20px;
+    /* background-color:#106359; */
+
+    /* texto */
     font-family: 'Afacad';
-    background-color:#106359;
+    text-wrap: nowrap;
+    text-align: center;
 }
 
 /* Estilo para as linhas divisórias */
@@ -219,3 +231,8 @@ header ul li a:hover {
 }
 
 
+@media (max-width: 768px){
+    .btn-logado div{
+        margin-right: 0;
+    }
+}

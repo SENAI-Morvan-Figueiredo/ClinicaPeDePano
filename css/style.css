@@ -82,8 +82,8 @@ body::before {
  }
 
  #slider img{
-    width: 980px;
-    height: 400px;
+    width: 61.25rem;
+    height: 25rem;
     border-radius: 20px;
  }
  #slider input[type=radio] {
@@ -99,7 +99,7 @@ body::before {
     border-radius: 10px;
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 25rem;
     z-index: 1;
  }
  #overflow {
@@ -120,32 +120,16 @@ body::before {
     transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
     width: 300%;
     line-height: 0;
-    height: 400px;
+    height: 25rem;
  }
  #slides .slide {
     width: 33%;
     float:left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100%;
     color: #fff;
  }
 
- #controls {
-    margin: -180px 0 0 0;
-    width: 100%;
-    height: 50px;
-    z-index: 3;
-    position: relative;
- }
- #controls label {
-    transition: opacity 0.2s ease-out;
-    display: none;
-    width: 50px;
-    height: 50px;
-    opacity: .4;
- }
+
  #controls label:hover {
     opacity: 1;
  }
@@ -205,19 +189,23 @@ h2 {
     color: #fff;
     cursor: pointer;
     border-radius: 8px;
-    height: 5rem;
+    height: 6rem;
     transition: 1s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 8rem; 
+    
 }
 
 .dropdown {
     margin-bottom: 20px;
     border-radius: 10px;
     background: white;
-    overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
-
 
 
 .tratamentos:hover {
@@ -225,7 +213,7 @@ h2 {
     transition: 1s;
 }
 
-summary h2{
+.tratamentos h2{
     text-align: center;
     font-size: 20px;
     margin-top: -10px;
@@ -276,16 +264,33 @@ h3 {
     .fisioicon{
         height: 4rem;
         width: 4rem;
-        margin-top: 0;
-        margin-left: 0;
+        
     }
+    #slider img{
+        width: 99%;
+    }
+    #slides .slide {
+        width: 33%;
+        float:left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        color: #fff;
+     }
+     #slides .inner {
+        transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+        width: 300%;
+        line-height: 0;
+        height: 25rem;
+        display: flex;
+        flex-direction: row;
+     }
 }
 
 .fisioicon{
     height: 4rem;
     width: 4rem;
-    margin-top: -55px;
-    margin-left: 800px;
 }
 
 .fisioimg{
@@ -294,7 +299,7 @@ h3 {
 } 
 
 /* From Uiverse.io by codebykay101 */ 
-.container {
+.container-imgs {
     position: relative;
     display: flex;
     justify-content: center;
@@ -303,7 +308,7 @@ h3 {
     flex-wrap: wrap;
   }
   
-  .container .glass {
+  .container-imgs .glass {
     position: relative;
     width: 180px;
     height: 200px;
@@ -320,12 +325,12 @@ h3 {
     transform: rotate(calc(var(--r) * 1deg));
   }
   
-  .container:hover .glass {
+  .container-imgs:hover .glass {
     transform: rotate(0deg);
-    margin: 0 10px;
+    
   }
   
-  .container .glass::before {
+  .container-imgs .glass::before {
     content: attr(data-text);
     position: absolute;
     bottom: 0;
@@ -337,7 +342,7 @@ h3 {
     align-items: center;
     color: #fff;
   }
-   .container .glass svg {
+   .container-imgs .glass svg {
     font-size: 2.5em;
     fill: #fff;
   }
@@ -348,7 +353,7 @@ h3 {
 } 
 
   
-  .container .carroimage {
+  .container-imgs .carroimage {
     width: 300px;
     height: 300px;
     object-fit: cover;
@@ -356,14 +361,14 @@ h3 {
     border-radius: 15px; 
   }
   
-  .container .carroimage:hover {
+  .container-imgs .carroimage:hover {
     transform: scale(1.1); 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
     border: 2px solid #00ff99; 
   }
    
   /* Estilo para a div glass */
-  .container .glass {
+  .container-imgs .glass {
     position: relative;
     display: inline-flex;
     align-items: center;
@@ -377,16 +382,16 @@ h3 {
     cursor: pointer;
   }
   
-  .container .glass:hover {
+  .container-imgs .glass:hover {
     transform: scale(1.05); 
   }
   
-  .container .glass svg {
+  .container-imgs .glass svg {
     fill: #333;
     transition: fill 0.3s ease;
   }
   
-  .container .glass:hover svg {
+  .container-imgs .glass:hover svg {
     fill: #00BFFF;
   }
   
