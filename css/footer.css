@@ -5,7 +5,6 @@ footer{
     height: 150px;
 
     color: rgb(0, 0, 0);
-    
     position: relative;
     bottom: 0px;
     
@@ -20,7 +19,6 @@ footer{
     border-top-left-radius: 50% 50%;
     border-top-right-radius: 50% 50%;
     background: #32756C;
-
 }
 
 .logo-footer{

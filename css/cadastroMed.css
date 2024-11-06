@@ -1,11 +1,11 @@
 .container-principal{
-    width: 100%;
+    
     margin-top: 20px;
 }
 
 
 .formulario{
-    width: 60%;
+    width: 80%;
     height: fit-content;
     margin: 10px auto;
     padding: 5px;
@@ -69,11 +69,16 @@ form label{
     margin-top: 10px;
     gap: 10px;
 }
+
 .input-radio{
+    width: 45%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
 }
 
 .input-radio div{
@@ -97,6 +102,8 @@ form label{
     flex-direction: row;
     align-items: flex-end;
     justify-content: center;
+    width: fit-content;
+    margin: 20px auto 0px auto;
 }
 
 #btn-alterar{
