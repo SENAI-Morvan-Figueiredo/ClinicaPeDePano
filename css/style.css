@@ -299,7 +299,7 @@ h3 {
 } 
 
 /* From Uiverse.io by codebykay101 */ 
-.container {
+.container-imgs {
     position: relative;
     display: flex;
     justify-content: center;
@@ -308,7 +308,7 @@ h3 {
     flex-wrap: wrap;
   }
   
-  .container .glass {
+  .container-imgs .glass {
     position: relative;
     width: 180px;
     height: 200px;
@@ -325,12 +325,12 @@ h3 {
     transform: rotate(calc(var(--r) * 1deg));
   }
   
-  .container:hover .glass {
+  .container-imgs:hover .glass {
     transform: rotate(0deg);
-    margin: 0 10px;
+    
   }
   
-  .container .glass::before {
+  .container-imgs .glass::before {
     content: attr(data-text);
     position: absolute;
     bottom: 0;
@@ -342,7 +342,7 @@ h3 {
     align-items: center;
     color: #fff;
   }
-   .container .glass svg {
+   .container-imgs .glass svg {
     font-size: 2.5em;
     fill: #fff;
   }
@@ -353,7 +353,7 @@ h3 {
 } 
 
   
-  .container .carroimage {
+  .container-imgs .carroimage {
     width: 300px;
     height: 300px;
     object-fit: cover;
@@ -361,14 +361,14 @@ h3 {
     border-radius: 15px; 
   }
   
-  .container .carroimage:hover {
+  .container-imgs .carroimage:hover {
     transform: scale(1.1); 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
     border: 2px solid #00ff99; 
   }
    
   /* Estilo para a div glass */
-  .container .glass {
+  .container-imgs .glass {
     position: relative;
     display: inline-flex;
     align-items: center;
@@ -382,16 +382,16 @@ h3 {
     cursor: pointer;
   }
   
-  .container .glass:hover {
+  .container-imgs .glass:hover {
     transform: scale(1.05); 
   }
   
-  .container .glass svg {
+  .container-imgs .glass svg {
     fill: #333;
     transition: fill 0.3s ease;
   }
   
-  .container .glass:hover svg {
+  .container-imgs .glass:hover svg {
     fill: #00BFFF;
   }
   
