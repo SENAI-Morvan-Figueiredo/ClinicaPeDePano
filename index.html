@@ -32,33 +32,42 @@
     </header>
 
     <main class="main-banner">
-        <article class="projetos-flex"> 
-            <span class="projeto">
-                <div class="slide-track">
-                    <div class="slide">
-                        <img src="" alt="#">
-                    </div>
-                    <div class="slide">
-                        <img src="" alt="#">
-                    </div>
-                    <div class="slide">
-                        <img src="" alt="#">
-                    </div>
-                    <div class="slide">
-                        <img src="" alt="#">
-                    </div>
-                    <div class="slide">
-                        <img src="" alt="#">
-                    </div>
-                    <div class="slide">
-                        <img src="" alt="#">
-                    </div>
-                    <div class="slide">
-                        <img src="" alt="#">
-                    </div>
-                </div>
-            </span>
-        </article>
+        <div id="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <div id="slides">
+               <div id="overflow">
+                  <div class="inner">
+                     <div class="slide slide_1">
+                        <div class="slide-content">
+                           <img src="imagens/1.png" alt="">
+                        </div>
+                     </div>
+                     <div class="slide slide_2">
+                        <div class="slide-content">
+                           <img src="imagens/2.png" alt="">
+                        </div>
+                     </div>
+                     <div class="slide slide_3">
+                        <div class="slide-content">
+                           <img src="imagens/3.png" alt="">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div id="controls">
+               <label for="slide1"></label>
+               <label for="slide2"></label>
+               <label for="slide3"></label>
+            </div>
+            <div id="bullets">
+               <label for="slide1"></label>
+               <label for="slide2"></label>
+               <label for="slide3"></label>
+            </div>
+         </div>
     </main>
 
 
