@@ -4,14 +4,17 @@
     justify-content: space-evenly;
     width: 100%;
 }
-
-form{
-  align-self: center;
+.container-principal{
+  width: 60%;
+  align-items: center;
+  justify-items: center;
+  padding-top: 0;
 }
+
 
 .card{
     align-self: center;
-    width: 400px;
+    width: 80%;
     height: fit-content;
     border-radius: 20px;
     margin-top: 50px;
