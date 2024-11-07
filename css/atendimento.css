@@ -9,16 +9,20 @@
     align-items: center;
     gap: 40px;
     margin: 10px auto;
+    background: transparent;
+    backdrop-filter: blur(0px);
 }
 .container-principal h1{
     margin-top: 10px;
+    color: black;
+    font-weight: bold;
 }
 .container-principal article{
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background: linear-gradient(to bottom, #D4ECE9,#299E93);
+    background: linear-gradient(to bottom, #d4ece999,#299e9299);
     z-index: 1;
     padding: 20px;
 }
