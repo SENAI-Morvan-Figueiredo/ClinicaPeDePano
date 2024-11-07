@@ -34,9 +34,9 @@ footer{
 }
 
 .icones-social{
-    font-size: 1.6rem;
+    font-size: 2.6rem;
     color: #b2ece5;
-
+    
     display: inline-flex;
     gap: 1rem;
 
@@ -44,8 +44,14 @@ footer{
     height: fit-content;
     position: absolute;
 
-    bottom: 25%;
-    left: 45%;
+    bottom: 30%;
+    left: 43%;
+    transition: 1s;
+}
+
+.icones-social a{
+    text-decoration: none;
+    color:#b2ece5;
 }
 
 .icones-social i{
@@ -53,19 +59,22 @@ footer{
 }
 .icones-social .fa-facebook:hover{
     color: rgb(4, 4, 126);
+    transition: .5s;
 }
 
 .fa-linkedin:hover{
     color: rgb(0, 110, 255);
+    transition: .5s;
 }
 
 .fa-instagram:hover{
-    color: #9528d3;
-    font-weight: bold;
+    color: #DD2A7B;
+    transition: .5s;
 }
 
 .fa-youtube:hover{
     color: red;
+    transition: .5s;
 }
 
 .responsavel-tecnico{
@@ -76,11 +85,13 @@ footer{
 
 .responsavel-tecnico h3{
     color: #b2ece5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .responsavel-tecnico p{
     color: white;
     font-size: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @media (max-width: 768px) {
