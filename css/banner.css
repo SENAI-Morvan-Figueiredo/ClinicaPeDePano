@@ -26,6 +26,9 @@
 p{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     justify-content: center;
+}
+
+.sobre p{
     margin-bottom: 5rem;
 }
 
