@@ -147,13 +147,13 @@ body::before {
     width: 10px;
     height: 10px;
     border-radius:100%;
-    background: #ccc;
+    background: #fa3419;
     margin: 0 10px;
  }
  #slide1:checked ~ #bullets label:nth-child(1),
  #slide2:checked ~ #bullets label:nth-child(2),
  #slide3:checked ~ #bullets label:nth-child(3) {
-    background: #444;
+    background: #f3e1b6;
  }
 
 .container-principal {
@@ -167,10 +167,12 @@ body::before {
 
 h1 {
     font-family: 'Afacad';
-    color: #ffffff;
+    color: #1d5e69;
     text-align: center;
     margin-top: 20px; /* Ajuste opcional para espaçamento */
     font-weight: lighter;
+    background-color: white;
+    border-radius: 20px;
 }
 
 h2 {
@@ -196,7 +198,7 @@ h2 {
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 8rem; 
-    
+    transition: 1s;
 }
 
 .dropdown {
@@ -204,19 +206,26 @@ h2 {
     border-radius: 10px;
     background: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+    transition: all 1s ease;
 }
 
 
 .tratamentos:hover {
-    background: linear-gradient(90deg, #5beab2, #30b6a6);
+    background: linear-gradient(90deg, #5beab2, #f3e1b6);
     transition: 1s;
 }
 
 .tratamentos h2{
     text-align: center;
-    font-size: 20px;
-    margin-top: -10px;
+    font-size: 30px;
+    margin-top: 10px;
+    color: #f3e1b6;
+    font-weight: lighter;
+}
+
+.tratamentos h2:hover {
+    color: #1d5e69;
+   
 }
 
 .dropdown-content {
@@ -364,7 +373,7 @@ h3 {
   .container-imgs .carroimage:hover {
     transform: scale(1.1); 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
-    border: 2px solid #00ff99; 
+    border: 2px solid #fa3419; 
   }
    
   /* Estilo para a div glass */
