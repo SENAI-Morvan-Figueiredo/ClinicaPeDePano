@@ -73,7 +73,7 @@ header ul li a {
 
 
 header ul li a:hover {
-    color: #ffffff;
+    color: #f3e1b6;
     text-decoration: none;
     font-size: 1.4rem;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -193,12 +193,12 @@ header ul li a:hover {
     width: fit-content;
     text-decoration: none;
     font-size: 20px;
-    color: #fff;
+    color: #f3e1b6;
     transition: all 0.2s ease-in;
 }
 
 .btn-logado a:hover{
-    color: #18dec3;
+    color: #fa3419;
 }
 
 .btn-logado {
@@ -211,16 +211,16 @@ header ul li a:hover {
     height: 60px;
     border-radius: 50%;
     border: solid 2px #fff; /* Borda branca */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(0, 123, 255, 0.8); /* Efeito glow */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px #f3e1b6; /* Efeito glow */
     animation: glowAnimation 1.5s infinite alternate; /* Animação de glow */
 }
 
 @keyframes glowAnimation {
     from {
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(0, 123, 255, 0.5); /* Glow inicial */
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px #fa3419; /* Glow inicial */
     }
     to {
-        box-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(0, 123, 255, 1); /* Glow final */
+        box-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px #fa3419; /* Glow final */
     }
 }
 
