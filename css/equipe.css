@@ -15,6 +15,7 @@ main h3 {
     -webkit-text-fill-color: transparent;
     display: flex;
     margin-top: 20px;
+    margin-left: 10px;
 }
 
 /* sobre a equipe */
@@ -22,7 +23,10 @@ main h3 {
     display: flex;
     flex-direction: column;
     width: 100%;
+    background-color: #D4ECE9;
+    border-radius: 20px;
 }
+
 
 .sobre-equipe article {
     display: flex;
@@ -32,6 +36,7 @@ main h3 {
     height: fit-content;
     margin-top: 10px;
     background-color: #D4ECE9;
+    border-radius: 20px;
 }
 
 .sobre-equipe article div {
@@ -43,6 +48,7 @@ main h3 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    border-radius: 20px;
 }
 
 .sobre-equipe article div img {
@@ -59,6 +65,10 @@ main h3 {
     border: 1px solid #12C7B9;
     padding: 20px;
     
+}
+
+.info-equipe p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* profissionais */
@@ -91,6 +101,7 @@ main h3 {
 
 .profissionais article p {
     text-align: justify;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 .info-profissional {
