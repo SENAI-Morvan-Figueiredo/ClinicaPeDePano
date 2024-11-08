@@ -1,6 +1,5 @@
 .container-principal{
-    
-    margin-top: 20px;
+    justify-items: center;
 }
 
 
@@ -126,24 +125,44 @@ form label{
     display: flex;
     flex-direction: column;
     background-color: aliceblue;
-    width:80% ;
-    margin:5%;
-    border-radius: 20px ;
+    width:80%;
+    border-radius: 20px;
+    padding: 1rem;
 }
 
 h2{
     text-align: center;
     padding:2%;
 }
-table{
+.consultas table{
     padding: 1%;
     line-height: 4px;
 }
 
 .anotacao{
     width:80% ;
-    height:300px ;
+    height:fit-content ;
+    margin-top: 1rem;
     background-color: aliceblue;
-    margin:5%;
     border-radius: 20px ;
+    padding: 1rem;
+    padding-top: 0;
+    justify-items: center;
+}
+.anotacao textarea{
+    width: 100%;
+    resize: none;
+    padding: 1rem;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .anotacao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }   
+    .anotacao textarea{
+        width: 80%;
+    }
 }
