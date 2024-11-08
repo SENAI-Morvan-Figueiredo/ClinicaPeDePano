@@ -206,12 +206,12 @@ h2 {
     border-radius: 10px;
     background: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: all 1s ease;
+    transition: 1s;
 }
 
 
 .tratamentos:hover {
-    background: linear-gradient(90deg, #5beab2, #f3e1b6);
+    background: linear-gradient(90deg, #23998e, #f3e1b6);
     transition: 1s;
 }
 
@@ -221,6 +221,7 @@ h2 {
     margin-top: 10px;
     color: #f3e1b6;
     font-weight: lighter;
+    transition: 1s;
 }
 
 .tratamentos h2:hover {
