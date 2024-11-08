@@ -13,4 +13,4 @@ Link da Página:
 https://senai-morvan-figueiredo.github.io/ClinicaPeDePano/
 
 Link do Notion:
-https://pentagonal-apparatus-54c.notion.site/Imagens-FIGMA-134642fa394b80419e98f510d2352e81?pvs=4
+https://pentagonal-apparatus-54c.notion.site/Documenta-o-134642fa394b8084bdd4e337395b7230?pvs=4
